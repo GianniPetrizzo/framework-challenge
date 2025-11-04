@@ -1,19 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>The Sopranos - A Groundbreaking Crime Drama</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a href="#home" class="navbar-brand fw-bold text-warning">THE SOPRANOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#characters" class="nav-link">Characters</a></li>
+                    <li class="nav-item"><a href="#legacy" class="nav-link">Legacy</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <script src="index.js"></script>
-  </body>
+
+    <!-- Hero Section -->
+    <section class="hero min-vh-100 d-flex align-items-center justify-content-center text-center" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-1 fw-bold mb-3 text-white">THE SOPRANOS</h1>
+                <p class="tagline lead mb-4 text-secondary fst-italic">"It's good to be in something from the ground floor"</p>
+                <a href="#about" class="btn btn-danger btn-lg px-5 rounded-pill text-uppercase">Explore the Family</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">The Show That Changed Television</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-text">
+                        <p class="mb-3">The Sopranos revolutionized television drama when it premiered on HBO in 1999. Created by David Chase, this groundbreaking series followed the life of Tony Soprano, a New Jersey mob boss struggling to balance the demands of his crime family with those of his actual family.</p>
+                        
+                        <p class="mb-3">The show's complex characters, sophisticated writing, and cinematic production values set a new standard for television excellence. It proved that TV could rival film in artistic ambition and cultural impact, paving the way for the golden age of television we enjoy today.</p>
+                        
+                        <p>Through six seasons and 86 episodes, The Sopranos explored themes of family, loyalty, identity, and the American Dream with unprecedented depth and nuance, earning critical acclaim and a devoted fanbase that endures to this day.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats card bg-dark p-4">
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number h2 text-warning fw-bold">86</div>
+                                    <div class="stat-label text-uppercase small">Episodes</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="stat-number h2 text-warning fw-bold">21</div>
+                                    <div class="stat-label text-uppercase small">Emmy Awards</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4 mb-md-0">
+                                <div class="stat-item">
+                                    <div class="stat-number h2 text-warning fw-bold">6</div>
+                                    <div class="stat-label text-uppercase small">Seasons</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <div class="stat-number h2 text-warning fw-bold">#1</div>
+                                    <div class="stat-label text-uppercase small">Greatest TV Drama</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters py-5 bg-dark" id="characters">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">The Family</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card character-card h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="character-avatar mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <span class="display-4 text-white">T</span>
+                            </div>
+                            <h3 class="character-name h5 text-warning">Tony Soprano</h3>
+                            <p class="character-role text-muted fst-italic">Boss of the DiMeo Crime Family</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card character-card h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="character-avatar mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <span class="display-4 text-white">C</span>
+                            </div>
+                            <h3 class="character-name h5 text-warning">Carmela Soprano</h3>
+                            <p class="character-role text-muted fst-italic">Tony's Wife</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card character-card h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="character-avatar mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <span class="display-4 text-white">Dr</span>
+                            </div>
+                            <h3 class="character-name h5 text-warning">Dr. Jennifer Melfi</h3>
+                            <p class="character-role text-muted fst-italic">Tony's Psychiatrist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card character-card h-100 text-center border-0">
+                        <div class="card-body">
+                            <div class="character-avatar mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <span class="display-4 text-white">Ch</span>
+                            </div>
+                            <h3 class="character-name h5 text-warning">Christopher Moltisanti</h3>
+                            <p class="character-role text-muted fst-italic">Tony's Protégé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section class="legacy py-5" id="legacy">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Cultural Impact</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card legacy-item h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="h4 text-warning mb-3">Television Revolution</h3>
+                            <p class="text-muted">The Sopranos proved that television could be a medium for serious artistic expression, inspiring a new generation of ambitious TV dramas including Breaking Bad, Mad Men, and The Wire.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card legacy-item h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="h4 text-warning mb-3">Complex Storytelling</h3>
+                            <p class="text-muted">The show pioneered the anti-hero protagonist and demonstrated that audiences were ready for morally ambiguous characters and sophisticated, novelistic storytelling on television.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card legacy-item h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="h4 text-warning mb-3">Cultural Phenomenon</h3>
+                            <p class="text-muted">From memorable quotes to iconic scenes, The Sopranos became deeply embedded in popular culture, influencing everything from fashion to language to our understanding of modern masculinity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-center">
+        <div class="container">
+            <p class="mb-3 text-muted">&copy; 2024 The Sopranos Landing Page | Created for Web Design Class</p>
+            <div class="social-links d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-outline-secondary rounded-circle p-2" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary rounded-circle p-2" aria-label="Twitter">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary rounded-circle p-2" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary rounded-circle p-2" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) - Only for navbar toggle functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
