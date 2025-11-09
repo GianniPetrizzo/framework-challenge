@@ -48,8 +48,6 @@ body {
 
 /* Hero Section */
 .hero {
-    /* removed embedded SVG background image to avoid hotlinked/embedded images
-       use a dark gradient that fits the theme and guarantees no external images */
     background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(10,10,10,0.8));
     background-size: cover;
     background-position: center;
@@ -287,9 +285,6 @@ footer p {
     background-color: #000000 !important;
 }
 
-/* Improve Bootstrap muted/secondary colors on dark backgrounds */
-/* Many paragraphs use Bootstrap's .text-muted or .text-secondary; override those
-   to a lighter muted color that reads on black/dark-gray backgrounds. */
 .text-muted,
 .text-secondary,
 .muted {
